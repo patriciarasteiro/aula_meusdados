@@ -1,0 +1,5 @@
+ORDEM;ESPÉCIES;COMPLETE (C);SINGLE COPY (S);DUPLICATED (D);FRAGMENTED (F);MISSING (M);
+Diptera;Drosophila Melanogaster;C:99.8%;S:98.7%;D:1.1%;F:0.0%;M:0.2%;n:2124
+Coleoptera;Tribolium castaneum;C:99.2%;S:98.6%;D:0.6%;F:0.2%;M:0.6%;n:2124
+Diptera;Anopheles gambiae;C:97.5%;S:95.9%;D:1.6%;F:0.7%;M:1.8%;n:2124
+Shiphonaptera;Ctenocephalides felis;C:94.7%;S:59.4%;D:35.3%;F:1.0%;M:4.3%;n:2124
