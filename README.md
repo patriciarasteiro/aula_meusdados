@@ -3,8 +3,9 @@ title: "README"
 output: github_document
 ---
 
+# README
 
-### Sobre o Projeto
+# Sobre o Projeto
 
 Projeto em desenvolvimento do meu doutorado no Programa de Genética e Biologia Molecular da Universidade Federal de Goiás. Um dos objetivos e estudar a evolução das enzimas digestivas tripsina e quimotripsina das borboletas e mariposas (ordem lepidoptera).
 
@@ -20,7 +21,7 @@ Dados das espécies de lepidoptera selecionadas do NCBI e planilha do banco de d
 
 Etapa de analise da qualidade das sequências proteínas das espécies selecionadas do NCBI e testes para escolha do grupo externo da árvore filogenética. 
 
-# Isoformas
+### Isoformas
 
 Para manter as isoformas mais longas foi utilizado o script AGAT:
 
@@ -31,7 +32,7 @@ for file in *gff; do agat_sp_keep_longest_isoform.pl -gff $file -o $file.longest
 [Acesse a página do AGAT](https://github.com/NBISweden/AGAT/blob/master/bin/agat_sp_keep_longest_isoform.pl)
 
 
-# Busco
+### Busco
 
 Para verificar a qualidade dos genomas foi utilizado para analise o banco de lepidoptera e de endopterygota do busco:
 
@@ -51,7 +52,7 @@ for file in *_protein.longestisof.faa; do busco -m protein -i $file -o $file.bus
 
 Busca pela melhor ávore filogenética usando resultados do busco para endopterygota e do Orthofinder:
 
-# arvore_Busco
+### arvore_Busco
 
 Ápos o alinhamento usando o mafft e a filtragem com o trimal as sequências foram concatenadas usando o catfasta2phyml.pl e usamos o iqtree para rodar a árvore:
 
@@ -59,7 +60,7 @@ Busca pela melhor ávore filogenética usando resultados do busco para endoptery
 iqtree -s concated-fasta.fasta -m JTT -bb 1000
 ```
 
-# arvore_orthofinder
+### arvore_orthofinder
 
 Para inferir uma árvore filogenética baseada em ortogrupos com o [Orthofinder](https://github.com/davidemms/OrthoFinder):
 
@@ -73,7 +74,7 @@ orthofinder -f proteinas/
 iqtree -s concated.ortho-fasta.fasta -m JTT -bb 1000
 ```
 
-# Visualização das árvores
+### Visualização das árvores
 
 Para visualização das árvores foi utilizado o [iTol](https://itol.embl.de/) e o script modificado para verificar as famílias que está na pasta 2__filogenia_especies e 3_script_itol. A pasta com os resultados do iqtree estão 1_output.
 
@@ -83,4 +84,3 @@ Gaden S. Robinson; Phillip R. Ackery; Ian Kitching; George W Beccaloni; Luis M. 
 
 ## Autores
 Patricia Rasteiro
-
